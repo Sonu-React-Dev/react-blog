@@ -50,3 +50,34 @@ git push -u origin main
 git remote add origin https://github.com/Sonu-React-Dev/e-com.git
 git branch -M main
 git push -u origin main
+
+#Install Flowbite React
+
+npm i flowbite-react
+
+const flowbite = require("flowbite-react/tailwind");
+
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    // ...
+
+    flowbite.content(),
+
+  ],
+  plugins: [
+    // ...
+
+    flowbite.plugin(),
+
+  ],
+};
+
+
+
+import { Button } from "flowbite-react";
+
+export default function App() {
+  return <Button>Click me</Button>;
+}

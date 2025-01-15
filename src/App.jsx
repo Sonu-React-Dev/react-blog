@@ -7,6 +7,7 @@ import Dashboard from "./pages/Dashboard";
 import Projects from "./pages/Projects";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
+import Footer from "./components/Footer";
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/dash" element={<Dashboard />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
   );
 };
